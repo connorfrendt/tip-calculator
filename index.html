@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <form onsubmit="event.preventDefault();">
+        <h3>How much was the food?</h3>
+        $<input placeholder="Dollar Amount" type="number"></input>
+        <h3>How much would you like to tip?</h3>
+        <input placeholder="Dollar Amount" type="number"></input>%
+        <br />
+        <br />
+        <button onclick="submitForm()">Submit</button>
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
