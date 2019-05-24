@@ -9,16 +9,25 @@
 </head>
 <body>
     <h1>Tip Calculator</h1>
-    <form onsubmit="event.preventDefault();">
+    <form id="form" onsubmit="event.preventDefault();">
         <h3>How much was the food?</h3>
-        $<input placeholder="Dollar Amount" type="number"></input>
-        <h3>How much would you like to tip?</h3>
-        <input placeholder="Dollar Amount" type="number"></input>%
-        <br />
-        <br />
-        <button onclick="submitForm()">Submit</button>
+        $<input id="foodMoney" placeholder="Dollar Amount" type="number"></input>
 
+        <h3>How much would you like to tip?</h3>
+        <input id="tipMoney" placeholder="Dollar Amount" type="number"></input>%
+
+        <br />
+        <br />
+
+        <button onclick="submitButton()">Calculate!</button>
+
+        <p>
+            <div id="total" class="total">
+            </div>
+        </p>
     </form>
+
+
     <script src="index.js"></script>
 </body>
 </html>
