@@ -7,9 +7,9 @@ function submitButton() {
     var total = Number(((tipCost / 100) * foodCost)) + Number(foodCost);
     console.log(total);
 
-    var total = document.getElementById('total');
+    var totalFFF = document.getElementById('total');
     var cost = document.createElement('div');
     cost.className = 'cost';
-    total.appendChild(cost);
+    totalFFF.appendChild(cost);
 
 }
