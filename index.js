@@ -9,5 +9,5 @@ function submitButton() {
 
     var totalFFF = document.getElementById('total');
     totalFFF.className = 'cost';
-    totalFFF.textContent = total;
+    totalFFF.textContent = '$' + total;
 }
