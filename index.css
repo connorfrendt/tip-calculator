@@ -18,3 +18,7 @@ body {
     background: rgb(165, 165, 165);
     color: black;
 }
+
+.div {
+    padding: 10px;
+}
