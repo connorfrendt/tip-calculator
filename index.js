@@ -8,8 +8,6 @@ function submitButton() {
     console.log(total);
 
     var totalFFF = document.getElementById('total');
-    var cost = document.createElement('div');
-    cost.className = 'cost';
-    totalFFF.appendChild(cost);
-
+    totalFFF.className = 'cost';
+    totalFFF.textContent = total;
 }

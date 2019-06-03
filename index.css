@@ -1,4 +1,10 @@
 body {
     text-align: center;
+    /* color: white; */
     background: green
+}
+
+.cost {
+    height: 200px;
+    color: white;
 }
