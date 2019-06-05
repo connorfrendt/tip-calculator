@@ -3,11 +3,10 @@ var submitForm = document.getElementById('form');
 function submitButton() {
     var foodValue = submitForm.elements['foodMoney'].value;
     var tipValue = submitForm.elements['tipMoney'].value
-    var tip = Number(((tipValue / 100) * foodValue));
-    var total = Number(((tipValue / 100) * foodValue)) + Number(foodValue);
+    var tip = Number(((tipValue / 100) * foodValue)).toFixed(2);
+    var total = (Number(((tipValue / 100) * foodValue)) + Number(foodValue)).toFixed(2);
 
     // toFixed(2)
-    // remove div
 
     console.log(total);
 
