@@ -7,11 +7,19 @@ function submitButton() {
     var total = Number(((tipValue / 100) * foodValue)) + Number(foodValue);
 
     // toFixed(2)
+    // remove div
 
     console.log(total);
 
     var totalCalc = document.getElementById('total');
     totalCalc.className = 'cost';
+
+    var del = document.getElementById('total');
+
+    if(del.hasChildNodes()) {
+        del.removeChild(del.childNodes[0]);
+        del.removeChild(del.childNodes[0]);
+    }
 
     var div1 = document.createElement('div');
     var div2 = document.createElement('div');
