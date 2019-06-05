@@ -6,10 +6,6 @@ function submitButton() {
     var tip = Number(((tipValue / 100) * foodValue)).toFixed(2);
     var total = (Number(((tipValue / 100) * foodValue)) + Number(foodValue)).toFixed(2);
 
-    // toFixed(2)
-
-    console.log(total);
-
     var totalCalc = document.getElementById('total');
     totalCalc.className = 'cost';
 
@@ -31,5 +27,4 @@ function submitButton() {
 
     div1.textContent = 'Tip: $' + tip;
     div2.textContent = 'Total: $' + total;
-
 }
